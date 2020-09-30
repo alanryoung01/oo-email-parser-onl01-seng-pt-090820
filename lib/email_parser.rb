@@ -11,8 +11,7 @@ def initialize(csv)
 end
 
 def parse
-csv.split
-csv.collect do |address|
+csv.split.collect do |address|
   address.split(' , ')
 end
 
