@@ -13,6 +13,7 @@ end
 def parse
   puts parser =
 emails.split.collect {|address| address.split(',')}
-parser.flatten.uniq
+splitemails = parser.flatten.uniq
+splitemails
 end
 end
