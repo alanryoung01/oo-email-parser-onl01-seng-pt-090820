@@ -11,7 +11,7 @@ def initialize(email)
 end
 
 def parse
-csv.split.collect do |address|
+email.split.collect do |address|
   address.split(' , ')
 end
 .flatten.uniq
