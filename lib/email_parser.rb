@@ -10,5 +10,10 @@ def initialize(csv)
   @csv = csv
 end
 
+def parse
+csv.split
+csv.collect do |address|
+  address.split(' , ')
+end
 
 end
