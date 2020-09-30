@@ -7,7 +7,7 @@ attr_accessor :name, :email
 
 def initialize(email)
   @name = name
-  @csv = email
+  @email = email
 end
 
 def parse
