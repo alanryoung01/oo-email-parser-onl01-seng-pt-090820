@@ -11,9 +11,10 @@ def initialize(email)
 end
 
 def parse
+  puts parser =
 email.split.collect do |address|
   address.split(' , ')
 end
-parse.flatten.uniq
+parser.flatten.uniq
 end
 end
